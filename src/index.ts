@@ -30,7 +30,6 @@ export async function asyncRun<Result extends ArrayDeep<Primitive>>(fn: () => Pr
   }
   if (typeof callback !== 'function') {
     throw new Error('expect callback SHOULD BE a function, actual is ' + typeof callback);
-    // return Promise.reject(new Error('callback MUST BE a function'));
   }
   try {
     let result: string | Result = await fn.call(null);
