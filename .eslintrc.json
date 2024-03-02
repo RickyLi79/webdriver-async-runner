@@ -1,0 +1,33 @@
+{
+  "root": true,
+  "extends": "eslint-config-egg/typescript",
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "project": [
+      "./tsconfig.json"
+    ]
+  },
+  "env": {
+    "commonjs": true,
+    "node": false,
+    "browser": true,
+    "es6": true,
+    "mocha": false,
+    "jquery": false,
+    "worker": false
+  },
+  "rules": {
+    "@typescript-eslint/no-unused-vars": "off",
+    "@typescript-eslint/ban-ts-comment": "off",
+    "no-trailing-spaces": "off",
+    "no-debugger": "off",
+    "no-lone-blocks": "off",
+    "no-constant-condition": "off",
+    "no-eval": "off",
+    "jsdoc/require-returns-type": "off",
+    "@typescript-eslint/no-this-alias": "off",
+    "@typescript-eslint/ban-types": "off",
+    "no-empty-function": "off",
+    "unused": "off"
+  }
+}
