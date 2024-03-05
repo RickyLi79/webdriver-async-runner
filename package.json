@@ -1,6 +1,6 @@
 {
   "name": "@rickyli79/webdriver-async-runner",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Solution for webdriver safty executeAsyncScript, handling errors.",
   "main": "bin/index.js",
   "keywords": [ "webdriver", "executeAsyncScript" ],
@@ -9,6 +9,10 @@
   },
   "repository": {
     "url": "https://github.com/RickyLi79/webdriver-async-runner/"
+  },
+  "exports": {
+    "./asyncRun.js": "./bin/asyncRun.js",
+    "./getRunResult.js": "./bin/getRunResult.js"
   },
   "author": {
     "email": "382688672@qq.com",
